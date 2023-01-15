@@ -2,41 +2,10 @@
 {
     public class Sleigh
     {
-        public string sleighName
-        {
-            get
-            {
-                return sleighName;
-            }
-            set
-            {
-                sleighName = value;
-            }
-        }
-        public double maxVolume
-        {
-            get
-            {
-                return maxVolume;
-            }
-            set
-            {
-                maxVolume = value;
-            }
-        }
-        public double maxWeight
-        {
-            get
-            {
-                return maxWeight;
-            }
-            set
-            {
-                maxWeight = value;
-            }
-        }
-
-        public double weight = 0.0, volume = 0.0;
+        private string sleighName;
+        private double maxVolume;
+        private double maxWeight; 
+        private double weight = 0.0, volume = 0.0;
         List<Gift> gifts = new List<Gift>();
         public Sleigh() {}
 
@@ -60,8 +29,16 @@
                 volume += gift.volume;
                 weight += gift.weight;
                 return true;
+            }            
+        }
+
+        public void ShowContent()
+        {
+            Console.WriteLine($"Ecco la lista dei regali nella lista \"{sleighName}\"");
+            foreach(Gift gift in gifts)
+            {
+                Console.WriteLine($"Nome: {gift.name} - Colore: {gift.color} - Peso: {gift.weight} - Volume {gift.volume}");
             }
-            
         }
     }
 }
