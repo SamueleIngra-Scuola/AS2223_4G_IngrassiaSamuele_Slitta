@@ -3,16 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AS2223_4G_IngrassiaSamuele_Slitta", "AS2223_4G_IngrassiaSamuele_Slitta.csproj", "{00D8F473-578C-4932-82B3-558C8062A6CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AS2223_4G_IngrassiaSamuele_Slitta", "AS2223_4G_IngrassiaSamuele_Slitta.csproj", "{00D8F473-578C-4932-82B3-558C8062A6CA}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementi di soluzione", "Elementi di soluzione", "{254E674E-FB03-4355-87A9-E040391DB322}"
-	ProjectSection(SolutionItems) = preProject
-		Class1.cs = Class1.cs
-	EndProjectSection
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Classes", "Classes\Classes.csproj", "{43C83BA0-0BEF-4A41-B246-8468C1BE6B97}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Classes", "Classes\Classes.csproj", "{43C83BA0-0BEF-4A41-B246-8468C1BE6B97}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTest.csproj", "{F7B9ADDD-6C33-4608-83F0-09B6EE5FCB29}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTest", "UnitTest\UnitTest.csproj", "{F7B9ADDD-6C33-4608-83F0-09B6EE5FCB29}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
