@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Classes
 {
-    internal class Gift
+    public class Gift
     {
         public string name
         {
@@ -60,8 +60,9 @@ namespace Classes
 
         public Gift() { }
 
-        public Gift(string color, double weight, double volume) 
+        public Gift(string name, string color, double weight, double volume) 
         {
+            this.name = name;
             this.colour = color;
             this.weight = weight;
             this.volume = volume;

@@ -35,6 +35,8 @@
                 maxWeight = value;
             }
         }
+
+        public double weight = 0.0, volume = 0.0;
         List<Gift> gifts = new List<Gift>();
         public Sleigh() {}
 
@@ -43,6 +45,23 @@
             this.sleighName = sleighName;
             this.maxVolume = maxVolume;
             this.maxWeight = maxWeight;
+        }
+
+        public bool AddGift(Gift gift)
+        {
+            if (volume + gift.volume > maxVolume || weight + gift.weight > maxWeight)
+            {
+                Console.WriteLine("Il regalo non può stare nella slitta");
+                return false;
+            }
+            else
+            {
+                gifts.Add(gift);
+                volume += gift.volume;
+                weight += gift.weight;
+                return true;
+            }
+            
         }
     }
 }
